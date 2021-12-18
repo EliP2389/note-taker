@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/EliP2389/note-taker#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "id-hasher": "^1.0.3"
   }
 }
