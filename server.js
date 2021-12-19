@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // app.use(express.static('public'));
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 function filterByQuery(query, notesArray) {
     let filteredResults = notesArray;
@@ -42,6 +42,11 @@ app.get('/api/notes/:id', (req, res) => {
     } else {
         res.send(404);
     }
+  });
+
+  app.post('/api/notes', (req, res) => {
+      console.log(req.body);
+      res.json(req.body);
   });
   
 
