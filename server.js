@@ -10,23 +10,23 @@ const app = express();
 // app.use(express.urlencoded({ extended: true }));
 // app.use(express.json());
 
-// function filterByQuery(query, notesArray) {
-//     let filteredResults = notesArray;
-//     if (query.title) {
-//         filteredResults = filteredResults.filter(notes => notes.title === query.title);
-//     }
-//     if (query.text) {
-//         filteredResults = filteredResults.filter(notes => notes.text === query.text);
-//     }
-//     return filteredResults;
-// }
+function filterByQuery(query, notesArray) {
+    let filteredResults = notesArray;
+    if (query.title) {
+        filteredResults = filteredResults.filter(notes => notes.title === query.title);
+    }
+    if (query.text) {
+        filteredResults = filteredResults.filter(notes => notes.text === query.text);
+    }
+    return filteredResults;
+}
 
 app.get('/api/notes', (req, res) => {
-    // let results = note;
-    // if (req.query) {
-    //     results = filterByQuery(req.query, results);
-    // }
-    res.json(notes);
+    let results = notes;
+    if (req.query) {
+        results = filterByQuery(req.query, results);
+    }
+    res.json(results);
 });
 
 
