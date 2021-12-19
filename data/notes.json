@@ -1,14 +1,24 @@
 {
-    "notes": [
-        {
-            "id": "1",
-            "title": "Test Title",
-            "text": "Test text"
-        },
-        {
-            "id": "2",
-            "title": "Note Taker",
-            "text": "Test text"
-        }
-    ]
+  "notes": [
+    {
+      "id": "1",
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "id": "2",
+      "title": "Note Taker",
+      "text": "Test text"
+    },
+    {
+      "id": "3",
+      "title": "Email",
+      "text": "mbk8689@gmail.com"
+    },
+    {
+      "title": "Moving Packages",
+      "text": "Decmeber 23 2021",
+      "id": "3"
+    }
+  ]
 }
