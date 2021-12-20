@@ -11,7 +11,7 @@ To display the use of express.js and creating a server to display a note taker w
 * NODE 
 
 ## Preview of Page
-<img src="./assets/images/note-img.png">
-<img src="./assets/images/notes-img.png">
+<img src="./public/assets/images/note-img.png" >
+<img src="./public/assets/images/notes-img.png" >
 
 
