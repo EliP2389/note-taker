@@ -70,10 +70,11 @@ app.get('/api/notes/:id', (req, res) => {
       if(!validateNote(req.body)){
           res.status(400).send('The note is not properly formatted.');
       } else {
-      const note = createNewNote(req.body, notes);
+      const note = createNewNote(req.body, note);
       res.json(note);
       }
   });
+
   
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
